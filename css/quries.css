@@ -200,7 +200,16 @@
 }
 
 #about .about-counter div h4 {
-   font-size: 40px;
+   font-size: 35px;
+}
+
+#services .container .services-content .flex-box i {
+    margin-right: 20px;
+    font-size: 18px;
+   
+    width: 60px;
+    height: 40px;
+    
 }
 
 #summary button {
