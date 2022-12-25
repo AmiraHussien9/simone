@@ -38,11 +38,16 @@ a {
 
 body {
 
-
-    overflow-x: hidden;
+overflow: hidden !important;
     
   
 }
+
+
+html {
+    overflow-x: hidden !important;
+}
+
 ::selection {
     background-color: var(--secondColor);
     color: white;
@@ -88,18 +93,6 @@ body {
 } 
 
 
-/************ heading responsive **************/
-@media (max-width:670px) {
-    .heading {
-        font-size: 50px;
-    }
-    .heading::after {
-        bottom: 10px;
-    }
-    .above-heading {
-        top: -50px;
-    }
-}
 
 
 /******************** End Component *******************/
@@ -148,7 +141,7 @@ body {
     position: relative;
     width: 100%;
     transition: all .3s;
-    overflow-x: hidden;
+   
 
 }
 
