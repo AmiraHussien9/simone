@@ -13,6 +13,9 @@ allLinks.forEach(link => {
         console.log(link.getAttribute("href"));
 
         let href = link.getAttribute("href");
+
+        
+
         if(href === "#") {
                 window.scrollTo({
                     top:0,
@@ -22,8 +25,8 @@ allLinks.forEach(link => {
 
 
         if(href !== "#" && href.startsWith('#') ) {
+            
             let section = document.querySelector(href);
-
             section.scrollIntoView({behavior:"smooth"})
         }
     })
@@ -53,6 +56,12 @@ let observeSection= new IntersectionObserver(function(entries) {
 
 
 observeSection.observe(homeSection);
+
+
+
+
+
+
 
 
 // -------------Open NavBar for mobile --------------
@@ -238,9 +247,87 @@ blockImaged.forEach((Image)=> {
 
 
 
-//  prevent default submit button in form
+// ----- prevent default submit button in form ---------
 document.querySelector("form button[type='submit'] ").addEventListener("click" , function(e){
     e.preventDefault();
 })
+
+
+
+
+// ------------------------
+
+// let observeSection= new IntersectionObserver(function(entries) {
+
+//     if(entries[0].isIntersecting === false) {
+//         document.body.classList.add("sticky");
+//         document.querySelector(".nav-btns button").style = "color : #4c4d4d";
+//         scrollBtn.style = "opacity : 1";
+//     }else {
+//         document.body.classList.remove("sticky");
+//         document.querySelector(".nav-btns button").style = "color : #fff";
+//         scrollBtn.style = "opacity : 0";
+//     }
+
+    
+
+// })
+
+
+// observeSection.observe(homeSection);
+
+
+// let links = document.querySelectorAll(".list-item");
+
+// links.forEach((link)=> {
+//     link.addEventListener("click" , function(e) {
+//         console.log(e.currentTarget)
+//        links.forEach((link) => {
+//         link.classList.remove("active")
+//        })
+//         e.currentTarget.classList.add("active");
+//         header.classList.remove("open-nav");
+//     })
+// })
+
+
+
+
+// let allSections = document.querySelectorAll("section");
+
+
+// allSections.forEach((section)=> {
+//     let observeAllSections = new IntersectionObserver(function(entries) {
+
+
+//         console.log(entries)
+//         entries.forEach(entry => {
+//             console.log(entry.isIntersecting)
+//             // if(entry.isIntersecting === true) {
+//             //     console.log("eee")
+//             //       links.forEach(link => {
+//             //         console.log(link)
+//             //         link.classList.add("active");
+
+//             //     })
+//             // } else if (entry.isIntersecting === false) {
+//             //     link.classList.remove("active");
+//             // }
+
+
+//             links.forEach(link => {
+//                 if(entry.isIntersecting === true) {
+//                     link.classList.add("active");
+//                 }else if (entry.isIntersecting === false) {
+//                     link.classList.remove("active");
+//                 }
+//             })
+//         })
+// });
+
+// observeAllSections.observe(section)
+// })
+
+
 
 

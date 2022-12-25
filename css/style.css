@@ -607,10 +607,39 @@ html {
     justify-content: space-between;
 }
 
+#summary button {
+    width: 190px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border-color: transparent;
+    background-color: transparent;
+    border: 2px solid var(--textColor);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: .3s;
+    cursor: pointer;
+}
+#summary button i {
+    color: var(--textColor);
+    font-size: 20px;
+}
+#summary button:hover {
+    background-color: var(--textColor);
+    color: white;
+}
+#summary button:hover i {
+    color: white;
+
+}
 
 
-
-/* end summary section */
+/********************** end summary section *****************/
 
 
 /* start portfolio section */
@@ -953,16 +982,10 @@ footer .container a.line::after {
     background-color: var(--textColor);
     right: -10px;
 }
-@media(max-width:760px) {
-    footer .container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-       text-align: center;
-    }
-}
 
-/* end footer */
+
+/**************** end footer *******************/
+/* ******************************************** */
 
 
 

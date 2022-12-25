@@ -212,42 +212,13 @@
 #services .container .services-content .flex-box i {
     margin-right: 20px;
     font-size: 18px;
-   
-    width: 70px;
+    width: 90px;
     height: 40px;
     
 }
 
-#summary button {
-    width: 190px;
-    height: 50px;
-    text-align: center;
-    display: block;
-    margin: auto;
-    margin-top: 40px;
-    border-color: transparent;
-    background-color: transparent;
-    border: 2px solid var(--textColor);
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    transition: .3s;
-    cursor: pointer;
-}
-#summary button i {
-    color: var(--textColor);
-    font-size: 20px;
-}
-#summary button:hover {
-    background-color: var(--textColor);
-    color: white;
-}
-#summary button:hover i {
-    color: white;
 
-}
+
 #testimonial .container .test-content {
     display: flex;
     flex-direction: column;
@@ -255,14 +226,8 @@
 }
 
 
-    .heading {
-        font-size: 50px;
-    }
 
-    .above-heading {
-        top: -45px;
-    }
-
+   
     .inputs {
         width: 100%;
         display: flex;
@@ -310,6 +275,24 @@
     }
     #portfolio .container .potfolio-content .images-col {
         width: 100%;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+    .above-heading {
+        top: -40px;
+        font-size: 25px;
+    }
+
+    .heading::after {
+        bottom: 12px;
+    }
+
+    .education h2, .experience h2,
+    #contact .container .contact-content form h2 {
+    
+        font-size: 22px;
     }
 }
 
