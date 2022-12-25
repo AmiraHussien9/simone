@@ -239,6 +239,12 @@ body {
     z-index: 1;
 
 }
+
+
+.home-heading {
+    height: 150px;
+     width: 290px;
+}
 #home::after {
     content: "";
     position: absolute;
