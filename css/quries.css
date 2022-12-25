@@ -301,13 +301,19 @@
     #about .about-counter div p,
     footer .container a,
     .copyRight {
-        font-size: 13px;
+        font-size: 10px;
     }
 
    
     #about .about-counter div {
         width: 50%;
        
+    }
+
+
+    footer .container a {
+    
+        padding-left: 13px;
     }
 }
 
