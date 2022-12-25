@@ -148,6 +148,7 @@ body {
     position: relative;
     width: 100%;
     transition: all .3s;
+    overflow-x: hidden;
 
 }
 
