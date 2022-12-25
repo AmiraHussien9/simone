@@ -317,6 +317,11 @@
     
         padding-left: 13px;
     }
+
+    #contact .container .contact-content .contact-address i {
+    
+        margin-right: 10px;
+    }
 }
 
 
