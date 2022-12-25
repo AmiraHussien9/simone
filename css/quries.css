@@ -157,7 +157,13 @@
 /* ****************************************************************** */
 
 @media(max-width:767px){
+    .home-content h1 {
+       font-size: 45px;
+    }
 
+    .home-content h2 {
+        font-size: 22px;
+    }
 
     #about .container .about-content {
        flex-direction: column;
