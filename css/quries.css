@@ -273,10 +273,10 @@
     height: 180px !important;
     }
 
-    form {
-        background-color: red;
+    .contact-address{
+        text-align: center;
+        padding-top: 50px;
     }
-
 }
 
 
