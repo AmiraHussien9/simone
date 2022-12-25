@@ -303,6 +303,12 @@
     .copyRight {
         font-size: 13px;
     }
+
+   
+    #about .about-counter div {
+        width: 50%;
+       
+    }
 }
 
 
