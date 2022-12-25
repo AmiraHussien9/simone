@@ -266,7 +266,12 @@
     .inputs {
         width: 100%;
         display: flex;
-        gap: 20px !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #contact .container .contact-content form input {
+        width: 100% !important;
     }
 
     #contact .container .contact-content form textarea {
@@ -296,6 +301,15 @@
         width: 120px;
         height: 40px;
         
+    }
+
+    #portfolio .container .potfolio-content {
+        display: flex;
+         flex-direction: column;
+        gap:20px;
+    }
+    #portfolio .container .potfolio-content .images-col {
+        width: 100%;
     }
 }
 

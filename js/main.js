@@ -1,35 +1,50 @@
 
 
+// -------------------------------------------------
+// -----  smooth scroll && scroll to top Button =-------
 
-// ------------- add end remove active class for links in navBar --------------
-// ----------------------------------------------------------------------------
 
-let links = document.querySelectorAll(".list-item");
+let allLinks = document.querySelectorAll("a");
 
-links.forEach((link)=> {
-    link.addEventListener("click" , function(e) {
-        console.log(e.currentTarget)
-       links.forEach((link) => {
-        link.classList.remove("active")
-       })
-        e.currentTarget.classList.add("active");
+allLinks.forEach(link => {
+    link.addEventListener('click' , function(e) {
+
+        e.preventDefault();
+        console.log(link.getAttribute("href"));
+
+        let href = link.getAttribute("href");
+        if(href === "#") {
+                window.scrollTo({
+                    top:0,
+                    behavior:"smooth"
+                })
+        }
+
+
+        if(href !== "#" && href.startsWith('#') ) {
+            let section = document.querySelector(href);
+
+            section.scrollIntoView({behavior:"smooth"})
+        }
     })
 })
 
 
-
-//--------------------- for sticky navBar ---------------------
+//--------------------- for sticky navBar  && display style for scroll to top button --------------------
 // ---------------------------------------------------------------
 let homeSection = document.querySelector("#home");
-console.log(homeSection)
+
+
 let observeSection= new IntersectionObserver(function(entries) {
 
             if(entries[0].isIntersecting === false) {
                 document.body.classList.add("sticky");
                 document.querySelector(".nav-btns button").style = "color : #4c4d4d";
+                scrollBtn.style = "opacity : 1";
             }else {
                 document.body.classList.remove("sticky");
                 document.querySelector(".nav-btns button").style = "color : #fff";
+                scrollBtn.style = "opacity : 0";
             }
 
             
@@ -50,7 +65,6 @@ let header = document.querySelector(".header")
 console.log(openBtn , closeBtn , header)
 
 openBtn.addEventListener("click" , function() {
-    console.log("okkkkkkkk")
     header.classList.add("open-nav");
     
 })
@@ -59,6 +73,31 @@ openBtn.addEventListener("click" , function() {
 closeBtn.addEventListener("click" , function() {
     header.classList.remove("open-nav");
 })
+
+
+
+
+
+
+// ---- add end remove active class for links in navBar >>>-----
+// ------------------------------------------------------------------------------------------------------
+
+let scrollBtn  = document.querySelector(".fixed-icon ");
+
+let links = document.querySelectorAll(".list-item");
+
+links.forEach((link)=> {
+    link.addEventListener("click" , function(e) {
+        console.log(e.currentTarget)
+       links.forEach((link) => {
+        link.classList.remove("active")
+       })
+        e.currentTarget.classList.add("active");
+        header.classList.remove("open-nav");
+    })
+})
+
+
 
 
 
@@ -74,6 +113,13 @@ let type = new Typed(".auto-type", {
 
 // ------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
@@ -185,6 +231,16 @@ blockImaged.forEach((Image)=> {
     })
 
   
+})
+
+
+
+
+
+
+//  prevent default submit button in form
+document.querySelector("form button[type='submit'] ").addEventListener("click" , function(e){
+    e.preventDefault();
 })
 
 
