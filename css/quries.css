@@ -1,0 +1,254 @@
+
+
+/* ********************large screen************************ */ 
+/* ********************************************************** */
+@media(max-width: 1200px) {
+   /* .splide__slide {
+    display: flex;
+    flex-direction: column;
+   
+   }
+
+   .test-box {
+    width: 80%;
+    margin: auto;
+   }
+     */
+}
+
+
+
+
+
+
+
+
+
+/* *********************************************** */
+/* **********medium********************************/
+
+
+@media(max-width:992px) {
+
+    /* ******navbar** */
+
+.nav-list {
+        background-color: rgb(248, 248, 248);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        height: 100vh !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        opacity: 0;
+        transform: translateX(100%);
+        pointer-events: none;
+        visibility: hidden;
+        transition: all .3s !important;
+
+    }
+
+    .open-nav .nav-list {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0%);
+    }
+
+     .header  nav.nav-list ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header  nav.nav-list ul li {
+        margin-bottom: 25px;
+    }
+    .header  nav.nav-list ul li a {
+        color: black;
+        font-size: 20px;
+    }
+
+
+
+    .nav-btns {
+        display: block ;
+      
+    }
+    
+    .nav-btns button .btn[name="menu"]{
+            display: block !important;
+          
+           
+    }
+
+
+    .nav-btns button .btn[name="close"]{
+        display: none ;
+       
+       
+}
+  
+    .open-nav .nav-btns button .btn[name="menu"] {
+        display: none !important;
+  
+      
+        }
+
+
+
+        .open-nav .nav-btns button .btn[name="close"] {
+            display: block !important;
+            color:rgb(56, 56, 56);
+            z-index: 9999;
+            position: relative;
+       
+        }
+
+
+
+        /* ********contact section******** */
+
+        .contact-content {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        #contact .container .contact-content form {
+            width: 100% !important;
+        }
+
+
+        .splide__list .splide__slide:nth-child(even) {
+            margin-left: 0px;
+         }
+         
+         .splide__list .splide__slide:nth-child(odd) {
+             margin-right: 0px;
+          }
+          
+
+          #contact .container .contact-content .contact-address {
+            width: 100%;
+        }
+
+        .heading {
+            font-size: 60px;
+        
+        }
+
+        .above-heading{
+            top: -55px;
+        }
+
+
+}
+
+
+
+
+
+
+
+/* ***********************mobile******************************* */
+/* ****************************************************************** */
+
+@media(max-width:767px){
+
+
+    #about .container .about-content {
+       flex-direction: column;
+    }
+    #services .container .services-content {
+        flex-direction: column;
+    }
+
+    #about .container .about-content .p-content {
+      width: 100%;
+    }
+
+    #about .container .about-content .about-list {
+        width: 100%;
+        margin-top: 40px;
+    }
+    #services .container .services-content .content-one,
+     #services .container .services-content .content-two {
+        width: 100%;
+    }
+    .first-col, .second-col {
+        width: 100% !important;
+    }
+
+    .bars {
+        gap: 0px;
+    }
+
+    #contact .container .contact-content form textarea {
+        width: 100%;
+    }
+
+    .bars {
+        display: flex;
+        flex-direction: column; 
+    }
+    .first-col ,
+.second-col {
+    width: 100%;
+}
+
+#about .about-counter div h4 {
+   font-size: 40px;
+}
+
+#summary button {
+    width: 190px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border-color: transparent;
+    background-color: transparent;
+    border: 2px solid var(--textColor);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: .3s;
+    cursor: pointer;
+}
+#summary button i {
+    color: var(--textColor);
+    font-size: 20px;
+}
+#summary button:hover {
+    background-color: var(--textColor);
+    color: white;
+}
+#summary button:hover i {
+    color: white;
+
+}
+#testimonial .container .test-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.heading {
+    font-size: 50px;
+}
+
+.above-heading {
+    top: -45px;
+}
+
+
+}
+
+

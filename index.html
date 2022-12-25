@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="xyz">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,536 +8,806 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- description for web page -->
     <meta name="description" content="">
-    <!-- main css file for styling -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- for render all element normally -->
+   
+    <!---- for render all element normally ---->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- fontAwsome library -->
+    <!------ fontAwsome library ----->
     <link rel="stylesheet" href="css/all.min.css">
-     <!-- google font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-    <title>Simone</title>
+    <!------ slider css file     -->
+    <link rel="stylesheet" href="dist/css/splide.min.css">
+    <link rel="stylesheet" href="dist/css/splide-core.min.css">
+   
+     <!-- main css file for styling -->
+     <link rel="stylesheet" href="css/style.css">
+      <!-- ------ media query- ---- -->
+    <link rel="stylesheet" href="css/quries.css">
+    <!-- google font  -->
+    <link
 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Simone</title>
+   
 </head>
-<body>
+
+<body >
+
     <div class="fixed-icon">
         <i class="fas fa-cog"></i>
     </div>
-    <!-- start header -->
-    <section id="home">
-        <header>
-        
-                <nav>
-                    <div class="logo">
-                        <img src="imgs/logo-light.png" alt="">
-                    </div>
-                   
-                    <div class="nav-list">
-                        <div class="home-icon">
-                            <i class="fas fa-bars"></i>
-                            </div>
-                        <ul>
-                            <li><a href="#home" class="active">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">What I Do</a></li>
-                            <li><a href="#summary">Resume</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#testimonial">Client</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>    
-                    </div>
-                </nav>
-            
-        </header>
 
-        <div class="home-content">
-            <h2>Welcome</h2>
-            <h1>I'm a Freelancer</h1>
-            <p>based in Los Angeles, California.</p>
-            <button class="btn-one">Hire Me</button>
+    <!-- --------------------------start header----------------------- -->
+    <!-- ------------------------------------------------------------- -->
+
+    <header class="header">
+
+
+        <div class="logo">
+            <img src="imgs/logo-light.png" alt="">
         </div>
-    </section>    
-    <!-- end header -->
 
-    <!-- Start About section -->
- 
-        <section id="about">
-            <div class="container">
-            <h2 class="heading">about me</h2>
-            <h3 class="above-heading">Know Me More</h3>
-            <div class="about-content">
-                <div class="p-content">
-                    <h4>I'm <span>Simone Olivia,</span> a Web Developer</h4>
-                    <p>I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team.
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>
-                        Delivering work within time and budget which meets clientâ€™s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.
-                        Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley. 
-                    </p>
+
+
+        <nav class="nav-list">
+
+            <ul>
+                <li><a class="list-item active" href="#home">Home</a></li>
+                <li><a  class="list-item" href="#about">About</a></li>
+                <li><a  class="list-item" href="#services">What I Do</a></li>
+                <li><a class="list-item"  href="#summary">Resume</a></li>
+                <li><a class="list-item"  href="#portfolio">Portfolio</a></li>
+                <li><a class="list-item"  href="#testimonial">Client</a></li>
+                <li><a class="list-item"  href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="nav-btns">
+            <button><ion-icon  class="btn" name="menu"></ion-icon></button>
+            <button><ion-icon  class="btn" name="close"></ion-icon></button>
+        </div>
+
+    </header>
+
+    <!-- --------------------------end header----------------------- -->
+    <!-- ------------------------------------------------------------- -->
+
+
+    <main>
+        <!---------------------------start home section------------------------>
+        <!--------------------------------------------------------------------->
+        <section id="home">
+
+            <div class="home-content">
+                <h2>Welcome</h2>
+                <div style="height: 150px; width: 290px;">
+                    <h1 class="auto-type"></h1>
                 </div>
-
-                <div class="about-list">
-                  <ul>
-                      <li><span>Name:</span> Simone Olivia</li>
-                      <li ><span>Email:</span> <a href="mailto:chat@simone.com">chat@simone.com</a></li>
-                      <li><span>Age:</span> 28</li>
-                      <li><span>From:</span> Los Angeles, California</li>
-                  </ul>
-                  <button>Download CV</button>
+                <div>
+                    <p>based in Los Angeles, California.</p>
+                    <button class="btn-hire">Hire Me</button>
                 </div>
-
-                    
             </div>
-                <div class="about-numbers">
+        </section>
+
+
+        <!--------------------------end home section------------------------->
+        <!------------------------------------------------------------------->
+
+
+        <!--------------------------------------------------->
+        <!----------------- Start About section -------------->
+
+        <section id="about">
+            <div class=" container">
+                <h2 class="heading">about me</h2>
+                <h3 class="above-heading">Know Me More</h3>
+                <div class="about-content">
+                    <div class="p-content">
+                        <h4>I'm <span>Simone Olivia,</span> a Web Developer</h4>
+                        <p>I help you build brand for your business at an affordable price. Thousands of clients have
+                            procured exceptional results while working with our dedicated team.
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book.<br><br>
+                            Delivering work within time and budget which meets clientâ€™s requirements is our moto.
+                            Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a
+                            galley.
+                            Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a
+                            galley.
+                        </p>
+                    </div>
+
+                    <div class="about-list">
+                        <ul>
+                            <li><span>Name:</span> Simone Olivia</li>
+                            <li><span>Email:</span> <a href="mailto:chat@simone.com">chat@simone.com</a></li>
+                            <li><span>Age:</span> 28</li>
+                            <li><span>From:</span> Los Angeles, California</li>
+                        </ul>
+                        <button>Download CV</button>
+                    </div>
+
+
+                </div>
+                <div class="about-counter">
                     <div>
-                        <h4>10+</h4>
+                        <h4 data-gaol="10">0</h4>
                         <p>Years Experiance</p>
                     </div>
 
                     <div>
-                        <h4>250+</h4>
+                        <h4 data-gaol="250">0</h4>
                         <p>Happy Clients</p>
                     </div>
 
-                    <div >
-                        <h4>650+</h4>
+                    <div>
+                        <h4 data-gaol="650">0</h4>
                         <p>Projects Done</p>
                     </div>
 
-                    
+
                     <div>
-                        <h4>38</h4>
+                        <h4 data-gaol="38">0</h4>
                         <p>Get Awards</p>
                     </div>
 
                 </div>
-             </div>
-            
+            </div>
+
         </section>
-    <!-- End About section -->
+        <!----------- End About section --------------------->
+        <!-- --------------------------------------------- -->
 
-    <!-- Start SERVICES section -->
-    <section id="services">
-        <div class="container">
-            <h2 class="heading">services</h2>
-            <h3 class="above-heading">What I Do?</h3>
-            <div class="services-content">
-                <div class="content-one">
-                    <div class="flex-box">
-                      
+        <!-------------- Start SERVICES section ---------------->
+        <section id="services">
+            <div class="container">
+                <h2 class="heading">services</h2>
+                <h3 class="above-heading">What I Do?</h3>
+                <div class="services-content">
+                    <div class="content-one">
+                        <div class="flex-box">
+
                             <i class="fas fa-palette"></i>
-                        <div class="text">
-                            <h3>Graphic Design</h3>
-                        <p>Lisque persius interesset his et, 
-                        in quot quidam persequeris vim, ad mea essent possim iriure.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex-box">
-                        <i class="fas fa-pencil-ruler"></i>
-                          <div class="text"> 
-                            <h3>UI/UX Design</h3>
-                            <p>
-                            Lisque persius interesset his et,
-                            in quot quidam persequeris vim, ad mea essent possim iriure.
-                            </p>
-                         </div>
-                    </div>
-
-                    <div class="flex-box">
-                     
-                            <i class="fas fa-chart-area"></i>
-                        <div class="text">
-                        <h3>Business Analysis</h3>
-                        <p>
-                        Lisque persius interesset his et, 
-                        in quot quidam persequeris vim, ad mea essent possim iriure.
-                        </p>
-
-
-                    </div>
-                    </div>
-                </div>    
-
-                <div class="content-two">
-                    <div class="flex-box">
-                      
-                            <i class="fas fa-desktop"></i>
-                        <div class="text">
-                        <h3>Web Design</h3>
-                        <p>
-                        Lisque persius interesset his et, 
-                        in quot quidam persequeris vim, ad mea essent possim iriure.
-                        </p>
-
-
-                    </div>
-                    </div>
-
-                    <div class="flex-box">
-                       
-                            <i class="fas fa-paint-brush"></i>
                             <div class="text">
-                            <h3> App Design & Develop</h3>
-                            <p>
-                            Lisque persius interesset his et,
-                            in quot quidam persequeris vim, ad mea essent possim iriure.
-                            </p>
+                                <h3>Graphic Design</h3>
+                                <p>Lisque persius interesset his et,
+                                    in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                             </div>
-                    </div>
+                        </div>
 
-                    
-                    <div class="flex-box">
-                     
-                            <i class="fas fa-volume-off"></i>
+                        <div class="flex-box">
+                            <i class="fas fa-pencil-ruler"></i>
                             <div class="text">
-                            <h3> SEO Marketing</h3>
+                                <h3>UI/UX Design</h3>
                                 <p>
-                                Lisque persius interesset his et,
-                                in quot quidam persequeris vim, ad mea essent possim iriure.
+                                    Lisque persius interesset his et,
+                                    in quot quidam persequeris vim, ad mea essent possim iriure.
                                 </p>
                             </div>
-                    </div>
-                </div>    
-            </div>
-        </div>
-     
-    </section>
-    <!-- end SERVICES section -->
+                        </div>
+
+                        <div class="flex-box">
+
+                            <i class="fas fa-chart-area"></i>
+                            <div class="text">
+                                <h3>Business Analysis</h3>
+                                <p>
+                                    Lisque persius interesset his et,
+                                    in quot quidam persequeris vim, ad mea essent possim iriure.
+                                </p>
 
 
-    <!-- start SUMMARY section -->
-    <section id="summary">
-        <div class="container">
-            <h2 class="heading">summary</h2>
-            <h3 class="above-heading">Resume</h3>
-            <div class="summary-content">
-                <div class="education">
-                    <h2>My Education</h2>
-                    <div>
-                        <p class="date">2000 - 2004</p>
-                        <h3>Computer Science</h3>
-                        <p class="colored">International University</p>
-                        <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim, 
-                            ad mea essent possim iriure.
-                        </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p class="date">2005 - 2008</p>
-                        <h3>Bachelor Degree</h3>
-                        <p class="colored">University of California</p>
-                        <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim, 
-                            ad mea essent possim iriure.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="date">2009 - 2012</p>
-                        <h3>Master Degree</h3>
-                        <p class="colored">Harvard University </p>
-                        <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim, 
-                            ad mea essent possim iriure.
-                        </p>
-                    </div>
-                    
-                </div>
+
+                    <div class="content-two">
+                        <div class="flex-box">
+
+                            <i class="fas fa-desktop"></i>
+                            <div class="text">
+                                <h3>Web Design</h3>
+                                <p>
+                                    Lisque persius interesset his et,
+                                    in quot quidam persequeris vim, ad mea essent possim iriure.
+                                </p>
 
 
-                <div class="experience">
-                    <h2>My Experience</h2>
-                    <div>
-                        <p class="date">2012 - 2013</p>
-                        <h3>Jr. UI UX Designer</h3>
-                        <p class="colored">Themeforest</p>
-                        <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim, 
-                            ad mea essent possim iriure.
-                        </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-box">
+
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="text">
+                                <h3> App Design & Develop</h3>
+                                <p>
+                                    Lisque persius interesset his et,
+                                    in quot quidam persequeris vim, ad mea essent possim iriure.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="flex-box">
+
+                            <i class="fas fa-volume-off"></i>
+                            <div class="text">
+                                <h3> SEO Marketing</h3>
+                                <p>
+                                    Lisque persius interesset his et,
+                                    in quot quidam persequeris vim, ad mea essent possim iriure.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p class="date">2014 - 2016</p>
-                        <h3>Jr. Product Designer</h3>
-                        <p class="colored">Dribbble</p>
-                        <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim, 
-                            ad mea essent possim iriure.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="date">2017 - 2019</p>
-                        <h3>Product Designer</h3>
-                        <p class="colored">Adobe</p>
-                        <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim, 
-                            ad mea essent possim iriure.
-                        </p>
-                    </div>
-                    
                 </div>
             </div>
 
-            <!--start bars -->
-            <div class="bars">
-                
-                <div class="first-col">
-                    <div class="pro">
-                 <div class="label">
-                <label for="web">Web Design</label> 65%
+        </section>
+        <!------------------- end SERVICES section ------------------------>
+
+
+        <!------------ start SUMMARY section ---------------------->
+        <section id="summary">
+            <div class="container">
+                <h2 class="heading">summary</h2>
+                <h3 class="above-heading">Resume</h3>
+                <div class="summary-content">
+                    <div class="education">
+                        <h2>My Education</h2>
+                        <div>
+                            <p class="date">2000 - 2004</p>
+                            <h3>Computer Science</h3>
+                            <p class="colored">International University</p>
+                            <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim,
+                                ad mea essent possim iriure.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="date">2005 - 2008</p>
+                            <h3>Bachelor Degree</h3>
+                            <p class="colored">University of California</p>
+                            <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim,
+                                ad mea essent possim iriure.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="date">2009 - 2012</p>
+                            <h3>Master Degree</h3>
+                            <p class="colored">Harvard University </p>
+                            <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim,
+                                ad mea essent possim iriure.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience">
+                        <h2>My Experience</h2>
+                        <div>
+                            <p class="date">2012 - 2013</p>
+                            <h3>Jr. UI UX Designer</h3>
+                            <p class="colored">Themeforest</p>
+                            <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim,
+                                ad mea essent possim iriure.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="date">2014 - 2016</p>
+                            <h3>Jr. Product Designer</h3>
+                            <p class="colored">Dribbble</p>
+                            <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim,
+                                ad mea essent possim iriure.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="date">2017 - 2019</p>
+                            <h3>Product Designer</h3>
+                            <p class="colored">Adobe</p>
+                            <p class="description">Lisque persius interesset his et, in quot quidam persequeris vim,
+                                ad mea essent possim iriure.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
-                <progress id="web" value="65" max="100"> 65% </progress>
-                    </div>
 
-                <div class="pro">
-                  <div class="label">
-                    <label for="html" >HTML/CSS</label> 95%
-                    </div>
-                    <progress id="html" value="95" max="100"> 95% </progress>
-                </div>    
+                <!--start bars -->
+                <div class="bars">
 
-
-                <div class="pro">
-                    <div class="label">
-                        <label for="js" >JavaScript</label> 80%
-                        </div>
-                        <progress id="js" value="80" max="100"> 80% </progress>
-                </div>        
-
-
-
-                </div>
-
-
-                <div class="second-col">
-                    <div class="pro">
-                    <div class="label">
-                   <label for="react" >React JS</label> 70%
-                   </div>
-                   <progress id="react" value="70" max="100"> 70% </progress>
-                   </div>
-   
-                    <div class="pro">
-                     <div class="label">
-                       <label for="angular">Angular Js</label> 60%
-                       </div>
-                       <progress id="angular"  value="60" max="100"> 60% </progress>
-                    </div>   
-   
-   
-                    <div class="pro">
-                       <div class="label">
-                           <label for="Bootstrap" >Bootstrap</label> 99%
-                           </div>
-                           <progress id="Bootstrap" value="90" max="100"> 99% </progress>
-                     </div>
-   
-   
-   
-                   </div>
-
-
-            </div>
-            
-            <!-- end bars -->
-            
-            <button>Download CV <i class="fas fa-download"></i></button>
-            
-        </div>
-    </section>
-    <!-- end SUMMARY section -->
-    
-
-    <!-- start portfolio section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2 class="heading">portfolio</h2>
-            <h3 class="above-heading">My Work</h3>
-            <div class="portfolio-list">
-                <ul>
-                    <li><a href="#" class="active">All</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Brand</a></li>
-                    <li><a href="#">Photos</a></li>
-                </ul>
-            </div>
-
-            <div class="potfolio-content">
-
-               <div class="images-col">
-
-                    <div class="image">
-                        <img src="projects/project-1.jpg" alt="">
-                        <div class="text-hidden">
-                            <h3>project title</h3>
-                            <p>category</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="projects/project-2.jpg" alt="">
-                        <div class="text-hidden">
-                            <h3>project title</h3>
-                            <p>category</p>
-                        </div>
-                    </div>
-               </div>
-
-
-               <div class="images-col">
-
-                     <div class="image">
-                    <img src="projects/project-3.jpg" alt="">
-                    <div class="text-hidden">
-                        <h3>project title</h3>
-                        <p>category</p>
-                    </div>
-                    </div>
-                    <div class="image">
-                        <img src="projects/project-4.jpg" alt="">
-                        <div class="text-hidden">
-                            <h3>project title</h3>
-                            <p>category</p>
-                        </div>
-                    </div>
-                   
-               </div>
-
-
-               <div class="images-col">
-
-                     <div class="image">
-                    <img src="projects/project-5.jpg" alt="">
-                    <div class="text-hidden">
-                        <h3>project title</h3>
-                        <p>category</p>
-                    </div>
-                     </div>
-                     <div class="image">
-                         <img src="projects/project-6.jpg" alt="">
-                         <div class="text-hidden">
-                            <h3>project title</h3>
-                            <p>category</p>
-                        </div>
-                     </div>
-                     <div class="image">
-                         <img src="projects/project-7.jpg" alt="">
-                         <div class="text-hidden">
-                            <h3>project title</h3>
-                            <p>category</p>
-                        </div>
-                     </div>
-
-               </div>
-            </div>
-        </div>
-    </section>
-     <!-- end portfolio section -->
-
-
-     <!-- start TESTIMONIAL section -->
-     <section id="testimonial">
-        <div class="container">
-            <h2 class="heading">testimonial</h2>
-            <h3 class="above-heading">Client Speak</h3>
-            <div class="test-content">
-                <div class="test-box">
-                    <div class="image-content">
-                    <img src="projects/client-sm-1.jpg" alt=""> 
-                    <div>
-                        <h3>Jay Shan</h3>
-                        <p>Founder at lcomatic Pvt Ltd</p>
-                    </div>
-                    </div>
-                   
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur voluptas 
-                        ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="first-col">
                         
-                </div>
-                <div class="test-box">
-                    <div class="image-content">
-                    <img src="projects/client-sm-2.jpg" alt="">
-                    <div>
-                        <h3>Patrict Cary</h3>
-                        <p>Freelancer from USA</p>
-                    </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur voluptas 
-                        ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
 
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                </div>
-                
-            </div>
-            <div class="dot">
-                <div class="light-dot">
-                     <div class="colored-dot"></div>
-                </div>
-                    <div class="dark-dot"></div>
-                
-            </div>
+                        <div class="pro-content">
+                           
+                            <div class="content">
+                                <span>Html/css</span>
+                                <span>65%</span>
+                            </div>
 
-        </div>
-     </section>
-     <!-- end TESTIMONIAL section -->
+                            <div class="progress">
 
-     <!-- start CONTACT section -->
-    
-     <section id="contact">
-         <div class="container">
-            <h2 class="heading">contact</h2>
-            <h3 class="above-heading">Get in Touch</h3>
-            <div class="contact-content">
-                <div class="contact-address">
-                    <h2>ADDRESS</h2>
-                    <address>
-                        4th Floor, Plot No.22,
-                        145 Murphy Canyon Rd.
-                        San Diego CA 2028
-                    </address>
-                    <div class="icon">
+                                <span width="0" data-width="65%"> </span>
+                            </div>
+
+                        </div>  
+                   
+
+                        
+                           
+                        <div class="pro-content">
+                           
+                            <div class="content">
+                                <span>bootstrap</span>
+                                <span>95%</span>
+                            </div>
+                            
+                            <div class="progress">
+
+                                <span width="0" data-width="95%"> </span>
+                            </div>
+
                        
-                        <p> <i class="fas fa-phone"></i>(060) 444 434 444</p>
-                    </div>
-
-                    <div class="icon">
+                            </div>
                         
-                        <p><i class="fas fa-pager"></i>(060) 555 545 555</p>
+
+                            <div class="pro-content">
+                           
+                                <div class="content">
+                                    <span>Html/css</span>
+                                    <span>80%</span>
+                                </div>
+                            
+                            <div class="progress">
+
+                                <span width="0" data-width="80%"> </span>
+                            </div>
+
+                        </div>
+                        </div>
+
+
+
+            
+
+
+                    <div class="second-col">
+                        
+
+
+                        <div class="pro-content">
+                           
+                            <div class="content">
+                                <span>react.js</span>
+                                <span>70%</span>
+                            </div>
+                           
+                            <div class="progress">
+
+                                <span width="0" data-width="70%"> </span>
+                            </div>
+                            </div>
+
+                        
+                          
+                            
+                            <div class="pro-content">
+                           
+                                <div class="content">
+                                    <span>jQuery</span>
+                                    <span>60%</span>
+                                </div>
+                            <div class="progress">
+
+                                <span width="0" data-width="60%"> </span>
+                            </div>
+                        </div>
+                  
+
+
+                        
+                           
+                        <div class="pro-content">
+                           
+                            <div class="content">
+                                <span>Node.js</span>
+                                <span>99%</span>
+                            </div>
+                            
+                            <div class="progress">
+
+                                <span width="0" data-width="99%"> </span>
+                            </div>
+                            </div>
+
+
+
+
                     </div>
 
-                    <div class="icon">
-                      
-                        <p>   <i class="fas fa-envelope-open"></i>chat@simone.com</p>
-                    </div>
 
-                    <h2 class="margin">FOLLOW ME</h2>
                 </div>
 
-                <form action="" method="">
-                    <h2>SEND US A NOTE</h2>
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea placeholder="Tell us more about your needs...."></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                <!-- end bars -->
+
+                <button>Download CV <i class="fas fa-download"></i></button>
+
             </div>
-         </div>
-     </section>
-     <!-- end CONTACT section -->
+        </section>
+        <!----------------- end SUMMARY section ----------------------->
 
-     <!-- start footer -->
 
-     <footer>
-         <div class="container">
+        <!------------- start portfolio section ------------------>
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="heading">portfolio</h2>
+                <h3 class="above-heading">My Work</h3>
+                <div class="portfolio-list">
+                    <ul class="portfolio-list">
+                        <li><a  class="active" data-cont="desgin">All</a></li>
+                        <li><a >Design</a></li>
+                        <li><a >Brand</a></li>
+                        <li><a >Photos</a></li>
+                    </ul>
+                </div>
+
+                <div class="potfolio-content">
+                    <div class="box" style="display: flex;">
+                        <div >
+                            <div class="image Design" >
+                                <img   src="projects/project-1.jpg" alt="" >
+                                <div class="text-hidden">
+                                    <h3>project title</h3>
+                                    <p>category</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="image Design" >
+                                <img src="projects/project-5.jpg" alt="" >
+                                <div class="text-hidden">
+                                    <h3>project title</h3>
+                                    <p>category</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div>
+                            <div class="image Brand">
+                                <img src="projects/project-3.jpg" alt="">
+                                <div class="text-hidden">
+                                    <h3>project title</h3>
+                                    <p>category</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="box" style="display: flex;">
+
+
+                        <div>
+                            <div class="image Brand" >
+                                <img src="projects/project-5.jpg" alt="" >
+                                <div class="text-hidden">
+                                    <h3>project title</h3>
+                                    <p>category</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div>
+                           
+                            <div class="image Photos">
+                                <img src="projects/project-3.jpg" alt="">
+                                <div class="text-hidden">
+                                    <h3>project title</h3>
+                                    <p>category</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            
+
+                            <div class="image Brand" >
+                                <img src="projects/project-5.jpg" alt="" >
+                                <div class="text-hidden">
+                                    <h3>project title</h3>
+                                    <p>category</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--------------------------- end portfolio section ----------------------------------->
+        <!-- ------------------------------------------------------------------------------ -->
+
+
+
+
+        <!----------------------- start TESTIMONIAL section ------------------------------------------>
+        <!-- --------------------------------------------------------------------------------- -->
+        <section id="testimonial">
+            <div class="container">
+                <h2 class="heading">testimonial</h2>
+                <h3 class="above-heading">Client Speak</h3>
+                <div class="test-content">
+
+
+
+                    <section class="splide"  aria-labelledby="carousel-heading">
+                        
+                      
+                      
+                        <div class="splide__track" style=>
+                              <ul class="splide__list">
+                                  <li class="splide__slide"> 
+                                     <div class="test-box ms-3">
+                                    <div class="image-content">
+                                        <img src="projects/client-sm-2.jpg" alt="">
+                                        <div>
+                                            <h3>Patrict Cary</h3>
+                                            <p>Freelancer from USA</p>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur
+                                        voluptas
+                                        ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
+            
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                     </div>
+                                             </li>
+
+                                     <li class="splide__slide">
+    
+                                     <div class="test-box">
+                                        <div class="image-content">
+                                            <img src="projects/client-sm-1.jpg" alt="">
+                                            <div>
+                                                <h3>Jay Shan</h3>
+                                                <p>Founder at lcomatic Pvt Ltd</p>
+                                            </div>
+                                        </div>
+                
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur
+                                            voluptas
+                                            ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                
+                                    </div>
+                                </li>
+
+
+
+                                  <li class="splide__slide">
+                                    <div class="test-box">
+                                        <div class="image-content">
+                                            <img src="projects/client-sm-2.jpg" alt="">
+                                            <div>
+                                                <h3>Patrict Cary</h3>
+                                                <p>Freelancer from USA</p>
+                                            </div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur
+                                            voluptas
+                                            ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
+                
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                         </div>
+                                         </li>
+        
+                                         <li class="splide__slide">
+                                         <div class="test-box">
+                                            <div class="image-content">
+                                                <img src="projects/client-sm-1.jpg" alt="">
+                                                <div>
+                                                    <h3>Jay Shan</h3>
+                                                    <p>Founder at lcomatic Pvt Ltd</p>
+                                                </div>
+                                            </div>
+                    
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur
+                                                voluptas
+                                                ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                    
+                                        </div>
+                                         </li>
+                                  <li class="splide__slide">
+                                    <div class="test-box">
+                                        <div class="image-content">
+                                            <img src="projects/client-sm-2.jpg" alt="">
+                                            <div>
+                                                <h3>Patrict Cary</h3>
+                                                <p>Freelancer from USA</p>
+                                            </div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur
+                                            voluptas
+                                            ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
+                
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                         </div>
+        
+                                         </li>
+                                         <li class="splide__slide">
+                                         <div class="test-box">
+                                            <div class="image-content">
+                                                <img src="projects/client-sm-1.jpg" alt="">
+                                                <div>
+                                                    <h3>Jay Shan</h3>
+                                                    <p>Founder at lcomatic Pvt Ltd</p>
+                                                </div>
+                                            </div>
+                    
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque similique consequatur
+                                                voluptas
+                                                ducimus voluptatem dicta quisquam corporis rem maxime et.</p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                    
+                                        </div>
+                                  </li>
+                              </ul>
+                        </div>
+                      </section>
+
+                </div>
+                <!-- <div class="dot">
+                    <div class="light-dot">
+                        <div class="colored-dot"></div>
+                    </div>
+                    <div class="dark-dot"></div>
+
+                </div>  -->
+
+
+
+               <!-- -------------------------->
+              
+            </div>
+        </section> 
+        <!-- end TESTIMONIAL section -->
+
+        <!-- start CONTACT section -->
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="heading">contact</h2>
+                <h3 class="above-heading">Get in Touch</h3>
+                <div class="contact-content">
+                    <div class="contact-address">
+                       
+                        <h2>ADDRESS</h2>
+                        <address>
+                            
+                            4th Floor, Plot No.22,
+                            145 Murphy Canyon Rd.
+                            San Diego CA 2028
+                        </address>
+                        <div class="icon">
+
+                            <p> <i class="fas fa-phone"></i>(060) 444 434 444</p>
+                        </div>
+
+                        <div class="icon">
+
+                            <p><i class="fas fa-pager"></i>(060) 555 545 555</p>
+                        </div>
+
+                        <div class="icon">
+
+                            <p> <i class="fas fa-envelope-open"></i>chat@simone.com</p>
+                        </div>
+
+                        <a class="follow">FOLLOW ME</a>
+                    </div>
+
+                    <form action="" method="">
+                        <h2>SEND US A NOTE</h2>
+                        <div class="inputs">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                        <textarea placeholder="Tell us more about your needs...."></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- end CONTACT section -->
+    </main>
+    <!-- start footer -->
+
+    <footer>
+        <div class="container">
             <div>Copyright Â© 2021 <span>Simone.</span> All Rights Reserved.</div>
             <div class="links">
                 <a href="#" class="line">Terms & Policy</a>
                 <a href="#">Disclaimer</a>
             </div>
-        </div>    
-     </footer>
-     <!-- end footer -->
-   
-   </body> 
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
+    <!------ slide  js file ------>
+
+    <script src="dist/js/splide.min.js"></script>
+
+    <!-- --------ionicon------ -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    
+    <!-- ///for slider -->
+<script>
+    
+    var splide = new Splide( '.splide', {
+        type   : 'loop',
+        drag   : 'free',
+        perPage: 2,
+        breakpoints: {
+		992: {
+			perPage: 1,
+		},
+  }
+      } );
+      
+      splide.mount();
+    
+    </script>
+    
+
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
