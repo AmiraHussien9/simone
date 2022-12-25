@@ -295,7 +295,9 @@
         font-size: 22px;
     }
 
-
+    footer .container {
+        flex-direction: column;
+    }
    
 
     #about .about-counter div p,
