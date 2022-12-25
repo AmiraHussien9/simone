@@ -936,31 +936,7 @@ body {
     margin:auto;
     box-shadow: 1px 1px 8px #ccc;
 }
-/* for responsive */
-@media(max-width:760px) {
-    #contact .container .contact-content {
-        display: flex;
-        flex-direction: column-reverse;
-        /* justify-content: center; */
-    }
-    #contact .container .contact-content form {
-        text-align: center;
-         margin-left: 0;
-        width: 100%;
-    }
-    #contact .container .contact-content form input {
-        width: 90%;
-        margin-bottom: 10px;
-    }
-    #contact .container .contact-content form  textarea {
-        width: 90%;
-    }
-    #contact .container .contact-content .contact-address {
-        width: 100%;
-        margin-top: 25px;
-        text-align: center;
-    }
-}
+
 
 /* end contact section */
 

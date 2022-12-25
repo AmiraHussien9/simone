@@ -255,14 +255,27 @@
 }
 
 
-.heading {
-    font-size: 50px;
-}
+    .heading {
+        font-size: 50px;
+    }
 
-.above-heading {
-    top: -45px;
-}
+    .above-heading {
+        top: -45px;
+    }
 
+    .inputs {
+        width: 100%;
+        display: flex;
+        gap: 20px !important;
+    }
+
+    #contact .container .contact-content form textarea {
+    height: 180px !important;
+    }
+
+    form {
+        background-color: red;
+    }
 
 }
 
