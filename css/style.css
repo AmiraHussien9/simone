@@ -956,6 +956,7 @@ html {
 footer .container {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     padding-top: var(--mainPadding);
     padding-bottom: var(--mainPadding);
     color: var(--textColor);
@@ -981,6 +982,7 @@ footer .container a.line::after {
     height: 100%;
     background-color: var(--textColor);
     right: -10px;
+    top: 0;
 }
 
 
