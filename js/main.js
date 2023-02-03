@@ -88,7 +88,7 @@ closeBtn.addEventListener("click" , function() {
 
 
 
-// ---- add end remove active class for links in navBar >>>-----
+// ---- add and remove active class for links in navBar >>>-----
 // ------------------------------------------------------------------------------------------------------
 
 let scrollBtn  = document.querySelector(".fixed-icon ");
@@ -105,6 +105,8 @@ links.forEach((link)=> {
         header.classList.remove("open-nav");
     })
 })
+
+
 
 
 
@@ -166,6 +168,7 @@ function countOnScroll(element) {
 
     }, 4000 / goal);
 }
+
 
 
 
@@ -257,73 +260,84 @@ document.querySelector("form button[type='submit'] ").addEventListener("click" ,
 
 // ------------------------
 
-// let observeSection= new IntersectionObserver(function(entries) {
 
-//     if(entries[0].isIntersecting === false) {
-//         document.body.classList.add("sticky");
-//         document.querySelector(".nav-btns button").style = "color : #4c4d4d";
-//         scrollBtn.style = "opacity : 1";
-//     }else {
-//         document.body.classList.remove("sticky");
-//         document.querySelector(".nav-btns button").style = "color : #fff";
-//         scrollBtn.style = "opacity : 0";
-//     }
 
+
+
+const sections = document.querySelectorAll('section');
+// simple function to use for callback in the intersection observer
+const changeNav = (entries, observer) => {
+	entries.forEach((entry) => {
+		// verify the element is intersecting
+		if(entry.isIntersecting && entry.intersectionRatio >= 0.55) {
+			// remove old active class
+			document.querySelector('.active').classList.remove('active');
+			// get id of the intersecting section
+			var id = entry.target.getAttribute('id');
+            console.log(id)
+			// find matching link & add appropriate class
+
+            let link =  document.querySelector(`[href="#home"]`);
+			 link.classList.add('active');
+             console.log( link)
     
+		}
 
-// })
+       
+	});
+}
 
+// init the observer
+const options = {
+	threshold: 0.55
+}
 
-// observeSection.observe(homeSection);
+const observer = new IntersectionObserver(changeNav, options);
 
+// target the elements to be observed
 
-// let links = document.querySelectorAll(".list-item");
-
-// links.forEach((link)=> {
-//     link.addEventListener("click" , function(e) {
-//         console.log(e.currentTarget)
-//        links.forEach((link) => {
-//         link.classList.remove("active")
-//        })
-//         e.currentTarget.classList.add("active");
-//         header.classList.remove("open-nav");
-//     })
-// })
-
+sections.forEach((section) => {
+	observer.observe(section);
+});
+// const options = {
+// 	threshold: 0.55
+// }
 
 
 
 // let allSections = document.querySelectorAll("section");
-
-
 // allSections.forEach((section)=> {
 //     let observeAllSections = new IntersectionObserver(function(entries) {
 
+// let thisSection = section.getAttribute("id");
+
 
 //         console.log(entries)
+
+
+
 //         entries.forEach(entry => {
-//             console.log(entry.isIntersecting)
-//             // if(entry.isIntersecting === true) {
-//             //     console.log("eee")
-//             //       links.forEach(link => {
-//             //         console.log(link)
-//             //         link.classList.add("active");
-
-//             //     })
-//             // } else if (entry.isIntersecting === false) {
-//             //     link.classList.remove("active");
-//             // }
-
+//             // console.log(entry.isVisible)
+    
 
 //             links.forEach(link => {
-//                 if(entry.isIntersecting === true) {
+
+//                 let href = link.getAttribute("href");
+                
+//                 console.log(`section id: `,section.getAttribute('id'))
+//                 console.log(`href:`, href)
+//                  console.log(entry.intersectionRatio )
+              
+//                 if(entry.isIntersecting && entry.intersectionRatio >= 0.55) {
 //                     link.classList.add("active");
-//                 }else if (entry.isIntersecting === false) {
+//                 }else  {
 //                     link.classList.remove("active");
 //                 }
 //             })
 //         })
-// });
+// }
+// , options);
+
 
 // observeAllSections.observe(section)
 // })

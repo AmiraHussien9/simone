@@ -668,14 +668,14 @@ html {
 
 #portfolio .potfolio-content .box{
     display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
 }
 
 
-
 .image img {
-    width: 100%;
+    width: 400px;
     height: auto;
     
  
@@ -698,8 +698,6 @@ html {
 -ms-transform: scale(1.2);
 -o-transform: scale(1.2); 
 }
-
-
 
 
 #portfolio .text-hidden {
